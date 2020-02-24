@@ -1,3 +1,6 @@
+![](https://img.shields.io/github/v/release/pureone-tcy/elastic-stack-local)
+![](https://img.shields.io/github/last-commit/pureone-tcy/elastic-stack-local)
+
 # Elastic Stack Local
 - Build Elasticsearch, Kibana, Logstash environment (v7.2.0) on local docker container.
 - Use `Logstash File input plugin` to automatically push json file under `logstash/pipeline/input/` to Elasticsearch.
