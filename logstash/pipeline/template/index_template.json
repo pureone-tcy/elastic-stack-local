@@ -1,0 +1,27 @@
+{
+    "index_patterns": "class-*",
+    "settings": {
+      "number_of_shards": 1,
+      "number_of_replicas": 0
+    },
+    "mappings": {
+      "properties": {
+        "class": {"type": "keyword"},
+        "id": {"type": "long"},
+        "season": {"type": "short"},
+        "decay_timestamp_ms": {
+          "type": "date",
+          "format": "epoch_millis"
+        },
+        "body": {
+          "properties": {
+            "name": {"type": "keyword"},
+            "timestamp_ms": {
+                "type": "date",
+                "format": "epoch_millis"
+            }
+          }
+        }
+      }
+    }
+}
